@@ -57,8 +57,8 @@ const monitor_balance = async () => {
                 throw new Error("Error fetching account info for " + account + ": " + err.message);
             });
 
-            consoleLog("Balance for account " + account + " is " + account_data.account_data.Balance);
-            if (parseInt(account_data.account_data.Balance) < xah_balance_threshold) {
+            consoleLog("Balance for account " + account + " is " + account_data.Balance);
+            if (parseInt(account_data.Balance) < xah_balance_threshold) {
                 const filePath = path.resolve(__dirname, 'balanceLow-' + account + '.txt');
                 consoleLog("Account balance for " + account + " is low, initiating funds transfer");
 
