@@ -14,6 +14,7 @@ It has been divided into three scripts:
 The hub accounts can be one of your evernode accounts or another one of your choice. 
 
 The EVR destinaton account can be an exchange.
+
 The EVR balance monitor for reputation accounts will be added soon.
 
 ## 1. Withdraw EVRs (evr_withdrawal.js)
