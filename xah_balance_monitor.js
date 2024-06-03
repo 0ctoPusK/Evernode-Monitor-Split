@@ -9,6 +9,11 @@ require('dotenv').config({ path: path.resolve(__dirname, '.env') });
 const xahaud = process.env.xahaud;
 const client = new XrplClient(xahaud);
 const accounts = process.env.accounts.split('\n');
+
+var reputationAccounts = [];
+if (process.env.reputationAccounts != null)
+  reputationAccounts = process.env.reputationAccounts.split('\n');
+
 const xahSourceAccount = process.env.xahSourceAccount;
 const xah_balance_threshold = parseInt(process.env.xah_balance_threshold, 10) * 1000000;
 const refill_amount = parseInt(process.env.refill_amount, 10) * 1000000;
