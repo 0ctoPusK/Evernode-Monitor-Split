@@ -49,7 +49,7 @@ First you need to ensure you have the latest version of node.js in your server (
 Then you can download and configure the script:
 
 ```
-git clone https://github.com/genesis-one-seven/evernode_monitor/
+git clone https://github.com/0ctoPusK/Evernode-Monitor-Split/
 
 cd evernode_monitor
 
