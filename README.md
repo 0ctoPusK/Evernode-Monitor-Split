@@ -39,6 +39,7 @@ This script cycles through your accounts and checks whether each account sent a 
 As a minimum numer of XAH is required to run an evernode host, this script sends N (configurable) XAH from the first account when the balance is below a certain threshold (configurable). In case the first account balance is too low to send XAH, an alert email is sent to the configured email. This means you will only have to check the first account XAH balance and you can ignore the others that are automatically filled when needed.
 
 This script DOES manage the reputation accounts XAH balance.
+
 This script DOESN'T manage the reputation accounts EVR balance.
 
 ## SMTP server
