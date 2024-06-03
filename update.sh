@@ -24,7 +24,7 @@ echo "remove Evernode-Monitor-Split folder"
 rm Evernode-Monitor-Split -r -f
 
 echo "clone the github repo"
-git clone https://github.com/genesis-one-seven/evernode_monitor/
+git clone https://github.com/0ctoPusK/Evernode-Monitor-Split/
 
 echo "restore .env file"
 cp  .env Evernode-Monitor-Split/.env
