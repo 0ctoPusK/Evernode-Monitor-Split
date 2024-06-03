@@ -55,9 +55,10 @@ const sendMail = async (subject, text) => {
 
 const monitor_balance = async () => {
     consoleLog("Monitoring the account XAH balance...");
-
+    var allAccounts = accounts.concat(reputationAccounts);
+    // Including reputation accounts for refilling XAH 
     try {
-        for (const account of accounts) {
+        for (const account of allAccounts) {
             let account_data = await client.send({ command: "account_info", account: account }).catch(err => {
                 throw new Error("Error fetching account info for " + account + ": " + err.message);
             });
