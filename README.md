@@ -78,7 +78,9 @@ The example below runs the transfer scripts every 30 minutes, every day, every h
 crontab -e
 
 0,30 * * * * /usr/bin/node /root/Evernode-Monitor-Split/evr_withdrawal.js >> /root/Evernode-Monitor-Split/log1.log
+
 0 0 * * * /usr/bin/node /root/Evernode-Monitor-Split/xah_balance_monitor.js >> /root/Evernode-Monitor-Split/log2.log
+
 0 * * * * /usr/bin/node /root/Evernode-Monitor-Split/heartbeat_monitor.js >> /root/Evernode-Monitor-Split/log3.log
 
 Cron documentation: https://www.cherryservers.com/blog/how-to-use-cron-to-automate-linux-jobs-on-ubuntu-20-04
