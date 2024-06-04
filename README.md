@@ -76,6 +76,7 @@ npm install
 node evr_withdrawal.js
 node xah_balance_monitor.js
 node heartbeat_monitor.js
+node evr_reputation_monitor.js
 ```
 
 You can now setup scheduled tasks that run the scripts regularly using Cron.
