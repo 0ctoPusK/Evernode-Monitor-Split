@@ -2,6 +2,7 @@ const { XrplClient } = require('xrpl-client');
 const lib = require('xrpl-accountlib');
 const { exit } = require('process');
 const path = require('path');
+const nodemailer = require('nodemailer');
 require('dotenv').config({ path: path.resolve(__dirname, '.env') });
 
 const verboseLog = process.env.verboseLog == "true";
