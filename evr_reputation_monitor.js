@@ -22,6 +22,19 @@ const reputationAccounts = process.env.reputationAccounts.split('\n');
 const evr_balance_threshold = parseInt(process.env.evr_balance_threshold, 10);
 const evr_refill_amount = parseInt(process.env.evr_refill_amount, 10);
 
+const smtpEmail = process.env.smtpEmail;
+const smtpKey = process.env.smtpKey;
+const destinationEmail = process.env.destinationEmail || process.env.smtpEmail;
+
+const transporter = nodemailer.createTransport({
+    host: "smtp-relay.sendinblue.com",
+    port: 587,
+    auth: {
+        user: smtpEmail,
+        pass: smtpKey,
+    },
+});
+
 var secret = "";
 var keypair;
 if (process.env.secret) {
