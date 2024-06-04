@@ -42,6 +42,12 @@ This script DOES manage the reputation accounts XAH balance.
 
 This script DOESN'T manage the reputation accounts EVR balance.
 
+## 4. Monitor the reputation account for EVR (evr_reputation_monitor.js)
+
+This script does monitor the EVR balance for the reputation accounts. you don't need to always send your EVRs to a source account and then to the reputation accounts which causes twice transaction fees.
+
+This just literally lets you send the EVR which you paid when the opt-in process back to the reputation account.  
+
 ## SMTP server
 
 In order to send emails from the script you need an SMTP server. Follow these instruction to setup your free account in BREVO: https://www.programonaut.com/how-to-send-an-email-in-node-js-using-an-smtp-step-by-step/. 
