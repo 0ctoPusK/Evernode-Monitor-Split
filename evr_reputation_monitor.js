@@ -35,6 +35,26 @@ const transporter = nodemailer.createTransport({
     },
 });
 
+const consoleLog = (msg) => {
+    console.log(new Date().toISOString() + " " + msg);
+};
+
+const sendMail = async (subject, text) => {
+    let mailOptions = {
+        from: smtpEmail,
+        to: destinationEmail,
+        subject: subject,
+        text: text
+    };
+
+    try {
+        let info = await transporter.sendMail(mailOptions);
+        consoleLog('Email sent: ' + info.response);
+    } catch (error) {
+        consoleLog('Error sending email: ' + error);
+    }
+};
+
 var secret = "";
 var keypair;
 if (process.env.secret) {
