@@ -49,11 +49,11 @@ const transfer_funds = async () => {
 
           marker = lines?.marker === marker ? null : lines?.marker;
           lines.lines.forEach(t => {
-            if (t.currency == "EVR") {
-              logVerbose(JSON.stringify(t));
-              balance = balance + t.balance;
-            }
-          });
+          if (t.currency == "EVR" && t.account == trustlineAddress) {
+            logVerbose(JSON.stringify(t))
+            balance = parseFloat(balance) + parseFloat(t.balance);
+          }
+        })
         }
 
         if (balance <= minimum_evr_transfer) {
