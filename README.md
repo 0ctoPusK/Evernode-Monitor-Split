@@ -118,5 +118,13 @@ Here's the one line version of the command sequence:
 cd Evernode-Monitor-Split && chmod +x update.sh && sudo ./update.sh
 ```
 
+# CONTRIBUTORS
+
+## Major Contributors
+
+- gadget78 (https://github.com/gadget78/)
+  - Reviewed and improved the code.
+  - Reported bugs.
+
 
 ## Use at your own risk. Double check your addresses before running the script!
