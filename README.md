@@ -126,5 +126,6 @@ cd Evernode-Monitor-Split && chmod +x update.sh && sudo ./update.sh
   - Reviewed and improved the code.
   - Reported bugs.
 
+Special thanks to gadget78 for reviewing and improving the code.
 
 ## Use at your own risk. Double check your addresses before running the script!
